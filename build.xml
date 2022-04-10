@@ -1,0 +1,27 @@
+<project>
+
+    <target name="clean">
+       	<exec executable="make" failonerror="true">
+		<arg line="clean"/>
+	</exec>
+		 
+    </target>
+
+       <target name="build">
+        <exec executable="make" failonerror="true">
+                <arg line="testBasicMath"/>
+        </exec>
+
+
+    </target>
+
+
+    <target name="run">
+	<exec executable="make" failonerror="true">
+                <arg line="all"/>
+        </exec>
+
+
+    </target>
+
+</project>
